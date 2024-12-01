@@ -8,6 +8,10 @@ pipeline {
       steps {
         sh 'mvn --version'
       }
+      script {
+                    echo 'Hello, World!'
+                }
+
     }
     stage('Front-end') {
       agent {
